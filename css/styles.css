@@ -28,6 +28,10 @@ input[type=text] {
     padding: 12px 20px 12px 40px;
 }
 
+input[type='radio']{
+    transform: scale(1.5);
+}
+
 .center{
     position: absolute;
     top:29%;
@@ -49,6 +53,7 @@ input[type=text] {
     position: relative;
     float: left;
     font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     color: #163833;
     font-size: 30px;
     top: 50%;
@@ -58,6 +63,8 @@ input[type=text] {
 
 ::-webkit-input-placeholder {
     color:#163833;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;  
 }
 
 
