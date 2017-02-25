@@ -1,0 +1,55 @@
+color values
+	1)  background:
+	    linear-gradient(
+	        rgba(255, 0, 0, 0.45),
+	        rgba(255, 0, 0, 0.45)
+	        ),
+	    url("../images/background3.png") no-repeat center center fixed;
+	2)  background:
+	    linear-gradient(
+	        rgba(255, 0, 255, 0.45),
+	        rgba(255, 0, 255, 0.45)
+	        ),
+	    url("../images/background3.png") no-repeat center center fixed;
+	3)  background:
+	    linear-gradient(
+	        rgba(0, 255, 0, 0.45),
+	        rgba(0, 255, 0, 0.45)
+	        ),
+	    url("../images/background3.png") no-repeat center center fixed;
+	4)  background:
+	    linear-gradient(
+	        rgba(0, 0, 255, 0.45),
+	        rgba(0, 0, 255, 0.45)
+	        ),
+	    url("../images/background3.png") no-repeat center center fixed;
+	5)  background:
+	    linear-gradient(
+	        rgba(66, 244, 238, 0.45),
+	        rgba(66, 244, 238, 0.45)
+	        ),
+	    url("../images/background3.png") no-repeat center center fixed;
+	6)  background:
+	    linear-gradient(
+	        rgba(244, 232, 65, 0.65),
+	        rgba(244, 232, 65, 0.65)
+	        ),
+	    url("../images/background3.png") no-repeat center center fixed;
+	6)  background:
+	    linear-gradient(
+	        rgba(127, 127, 127, 0.45),
+	        rgba(127, 127, 127, 0.45)
+	        ),
+	    url("../images/background3.png") no-repeat center center fixed;
+	7)  background:
+		    linear-gradient(
+		        rgba(255, 89, 249, 0.45),
+		        rgba(255, 89, 249, 0.45)
+		        ),
+		    url("../images/background3.png") no-repeat center center fixed;
+	8)  background:
+		    linear-gradient(
+		        rgba(160, 80, 0, 0.45),
+		        rgba(160, 80, 0, 0.45)
+		        ),
+		    url("../images/background3.png") no-repeat center center fixed;
