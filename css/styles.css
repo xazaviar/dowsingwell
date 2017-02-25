@@ -81,6 +81,75 @@ input[type='radio']{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;  
 }
 
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #333;
+}
+
+.img{
+    float: left;
+}
+
+.button {
+    background-color: #333;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.return{
+    float: right;
+    color: white;
+    padding: 15px 32px;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+
+.button.up{
+    background-image: url(up_rod.png);
+    background-size: 48px 52px;
+    background-repeat: no-repeat;
+    height: 48px;
+    margin: 10px 30px;
+    width: 52px;
+    float: center;
+}
+
+.button.down{
+    background-image: url(down_rod.png);
+    background-size: 48px 52px;
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 52px; 
+    margin: 10px 0px;
+    float: center;
+}
+
+.li{
+    float: right;
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin: 21px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.button:hover:not(.active) {
+    background-color: #111;
+}
+
+.iframe {
+     position: absolute;
+     height: 87%;
+     width: 98.5%;
+}
 
 /*
  @-webkit-keyframes argh-my-eyes {
