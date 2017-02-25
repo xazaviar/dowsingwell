@@ -1,46 +1,70 @@
 .main{
-    background-color: #F0EAD6;
-}
-
-h1{
-    color:blue;
-    text-align: center;
-    font-family: cursive;
+   /* background:
+    linear-gradient(
+        rgba(255, 89, 249, 0.45),
+        rgba(255, 89, 249, 0.45)
+        ),
+    url("../images/background3.png") no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 input[type=text] {
-    position: absolute;
-    top: 25%;
-    width:130px;
+    position: relative;
+    float: left;
+    width:400px;
+    left:40%;
     box-sizing: border-box;
-    border: 1px solid #000000;
+    border: 2px solid #163833;
     border-radius: 4px;
-    font-size: 12px;
-    background-color: blue;
-    background-image: url("searchicon.png");
+    font-size: 24px;
+    text-align: center;
+    color:#163833;
+    background-color: #DFDCE3;
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
-    transition: width 0.4s ease-in-out;
 }
-input[type=text]:focus{
-    width: 100%;
+
+input[type='radio']{
+    transform: scale(1.5);
 }
+
 .center{
     position: absolute;
-    top:50%;
-    left:44.25%;
+    top:29%;
+    left:29.25%;
     width: 400px;
     height: 200px;
 }
 
 .center .logo{
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    left: 25%;
-    text-align: center;
-    font-size: 40px;
+    content: url("../images/logo1.png");
+    position: relative;
+    float:left;
+    width: 700px;
+    height: 250px;
+    padding-bottom: 15px;
+}
+
+.center .buttons{
+    position: relative;
+    float: left;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    color: #163833;
+    font-size: 30px;
+    top: 50%;
+    left: 57%;
+    padding-top: 20px;
+}
+
+::-webkit-input-placeholder {
+    color:#163833;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;  
 }
 
 
