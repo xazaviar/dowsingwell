@@ -1,10 +1,10 @@
 .main{
-    background:
+   /* background:
     linear-gradient(
         rgba(255, 89, 249, 0.45),
         rgba(255, 89, 249, 0.45)
         ),
-    url("../images/background3.png") no-repeat center center fixed;
+    url("../images/background3.png") no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
