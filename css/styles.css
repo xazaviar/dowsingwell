@@ -3,3 +3,54 @@ h1{
     text-align: center;
     font-family: cursive;
 }
+
+input[type=text] {
+     width:130px;
+     box-sizing: border-box;
+     border: 1px solid #000000;
+     border-radius: 4px;
+     font-size: 12px;
+     background-color: blue;
+     background-image: url("searchicon.png");
+     background-position: 10px 10px;
+     background-repeat: no-repeat;
+     padding: 12px 20px 12px 40px;
+     transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus{
+    width: 100%;
+}
+.center{
+    position: absolute;
+    padding-left:44.25%;
+}
+
+
+/*
+ @-webkit-keyframes argh-my-eyes {
+    0%   { background-color: blue; }
+    49% { background-color: blue; }
+    50% { background-color: red; }
+    99% { background-color: white; }
+    100% { background-color: blue; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: blue; }
+    49% { background-color: blue; }
+    50% { background-color: red; }
+    99% { background-color: white; }
+    100% { background-color: blue; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: blue; }
+    49% { background-color: blue; }
+    50% { background-color: red; }
+    99% { background-color: white; }
+    100% { background-color: blue; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes .25s infinite;
+  -moz-animation:    argh-my-eyes .25s infinite;
+  animation:         argh-my-eyes .25s infinite;
+}
+*/
