@@ -15,7 +15,7 @@ function buildpage(id){
 
 function buildHome(){
 	$(".main").append('<div class="center"><div class="logo"></div></div>');
-	$(".main .center").append('<form><input type="text" name="search" placeholder="Search"><div class="buttons"><input type="radio" name="Searching" value="exploring" checked>Exploring<input type="radio" name="Searching" value="indexed">Indexed</div></form>');
+	$(".main .center").append('<form><input type="text" name="search" placeholder="Search" onfocus="this.placeholder =\'\'" onblur="this.placeholder =\'Search\'"><div class="exploring"><input type="radio" name="Searching" value="exploring" checked>Exploring</div><div class="indexed"><input type="radio" name="Searching" value="indexed">Indexed</div></form>');
 
 	//Change The background color
 	var colors = [[255,0,0,0.45],
