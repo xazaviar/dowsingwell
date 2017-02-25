@@ -1,3 +1,7 @@
+.main{
+    background-color: #F0EAD6;
+}
+
 h1{
     color:blue;
     text-align: center;
@@ -5,24 +9,38 @@ h1{
 }
 
 input[type=text] {
-     width:130px;
-     box-sizing: border-box;
-     border: 1px solid #000000;
-     border-radius: 4px;
-     font-size: 12px;
-     background-color: blue;
-     background-image: url("searchicon.png");
-     background-position: 10px 10px;
-     background-repeat: no-repeat;
-     padding: 12px 20px 12px 40px;
-     transition: width 0.4s ease-in-out;
+    position: absolute;
+    top: 25%;
+    width:130px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: blue;
+    background-image: url("searchicon.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
 }
 input[type=text]:focus{
     width: 100%;
 }
 .center{
     position: absolute;
-    padding-left:44.25%;
+    top:50%;
+    left:44.25%;
+    width: 400px;
+    height: 200px;
+}
+
+.center .logo{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 25%;
+    text-align: center;
+    font-size: 40px;
 }
 
 
