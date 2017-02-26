@@ -1,7 +1,7 @@
 var searchKeyword;
 
 $(document).ready(function() {
-	buildpage(1);
+	buildHome();
 });
 
 
