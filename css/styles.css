@@ -1,10 +1,10 @@
 .main{
-   /* background:
+    background:
     linear-gradient(
         rgba(255, 89, 249, 0.45),
         rgba(255, 89, 249, 0.45)
         ),
-    url("../images/background3.png") no-repeat center center fixed;*/
+    url("../images/background3.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -81,103 +81,6 @@ input[type='radio']{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;  
 }
 
-.img-div {
-    float:left;
-    left: 10px;
-}
-
-.ul {
-    position: absolute;
-    width: 100.25%;
-    height: 63px;
-    left: -0.25%;
-    top: -1px;
-    background-color: #333
-}
-
-.iframe {
-     position: absolute;
-     border: none;
-     top: 9.7%;
-     left: -0.25%;
-     height: 90%;
-     width: 100.25%;
-     background-color: white;
-}
-
-
-.img{
-    float: left;
-    height: 65px;
-    width: 60px;
-}
-
-.button {
-    background-color: #333;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.button.return{
-    float: right;
-    color: white;
-    background-color: brown;
-    padding: 19px 15px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-}
-
-.button.back{
-    background-image: url(../images/back.png);
-    background-size: 48px 52px;
-    background-repeat: no-repeat;
-    height: 48px;
-    margin: .5%;
-    width: 52px;
-    float: center; 
-}
-
-.button.refresh{
-    background-image: url(../images/refresh.png);
-    background-size: 48px 52px;
-    background-repeat: no-repeat;
-    height: 48px;
-    width: 52px; 
-    margin: 10px 0px;
-    float: center;
-}
-
-.li{
-    float: right;
-    display: block;
-    color: white;
-    font-weight: bold;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    font-size: 20px;
-    margin: 21px 5px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.li2{
-    float: right;
-    display: block;
-    color: white;
-    font-weight: bold;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    font-size: 20px;
-    margin: 21px 20px;
-    font-style: italic;
-    text-align: center;
-    text-decoration: none;
-}
-
-.button:hover:not(.active) {
-    background-color: #111;
-}
 
 /*
  @-webkit-keyframes argh-my-eyes {
