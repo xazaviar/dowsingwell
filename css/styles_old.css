@@ -1,0 +1,112 @@
+.main{
+   /* background:
+    linear-gradient(
+        rgba(255, 89, 249, 0.45),
+        rgba(255, 89, 249, 0.45)
+        ),
+    url("../images/background3.png") no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+input[type=text] {
+    position: relative;
+    float: left;
+    width:400px;
+    left:40%;
+    box-sizing: border-box;
+    border: 2px solid #163833;
+    border-radius: 4px;
+    font-size: 24px;
+    text-align: center;
+    color:#163833;
+    background-color: #DFDCE3;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+input[type='radio']{
+    transform: scale(1.5);
+}
+
+.center{
+    position: absolute;
+    top:29%;
+    left:29.25%;
+    width: 400px;
+    height: 200px;
+}
+
+.center .logo{
+    content: url("../images/logo1.png");
+    position: relative;
+    float:left;
+    width: 700px;
+    height: 250px;
+    padding-bottom: 15px;
+}
+
+.center .exploring{
+    position: relative;
+    float: left;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    color: #163833;
+    font-size: 30px;
+    top: 50%;
+    left: 55%;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.center .indexed{
+    position: relative;
+    float: left;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    color: #163833;
+    font-size: 30px;
+    top: 50%;
+    left: 55%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+    color:#163833;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;  
+}
+
+
+/*
+ @-webkit-keyframes argh-my-eyes {
+    0%   { background-color: blue; }
+    49% { background-color: blue; }
+    50% { background-color: red; }
+    99% { background-color: white; }
+    100% { background-color: blue; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: blue; }
+    49% { background-color: blue; }
+    50% { background-color: red; }
+    99% { background-color: white; }
+    100% { background-color: blue; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: blue; }
+    49% { background-color: blue; }
+    50% { background-color: red; }
+    99% { background-color: white; }
+    100% { background-color: blue; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes .25s infinite;
+  -moz-animation:    argh-my-eyes .25s infinite;
+  animation:         argh-my-eyes .25s infinite;
+}
+*/
