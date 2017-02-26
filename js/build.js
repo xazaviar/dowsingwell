@@ -1,7 +1,17 @@
 var searchKeyword;
+var mostFrequent;
 
 $(document).ready(function() {
-	buildHome();
+	var req = new XMLHttpRequest();
+	req.open("GET","./php/insertDB.php?val="+finalURL+"&val2="+input+"&op="+1,true);
+	req.send();
+	req.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			mostFrequent = req.responseText;
+			mostFrequent = mostFrequent.charAt(0).toUpperCase() + mostFrequent.slice(1);
+			buildHome();
+		}
+	}
 });
 
 
@@ -18,7 +28,7 @@ function buildpage(id,url){
 function buildHome(){
 	$(".main").append('<div class="center"><div class="logo"></div></div>');
 	$(".main .center").append('<form><input type="text" name="search" placeholder="Search" onfocus="this.placeholder =\'\'" onblur="this.placeholder =\'Search\'"><div class="exploring"><input type="radio" name="Searching" value="exploring" checked>Exploring</div><div class="indexed"><input type="radio" name="Searching" value="indexed">Indexed</div></form>');
-
+	$(".main").append('<p>Top Search : ' + mostFrequent +' </p>');
 	//Change The background color
 	var colors = [[255,0,0,0.45],
 				  [255,0,255,0.45],
@@ -43,21 +53,30 @@ function buildHome(){
 
 function buildWebsiteView(url){
 	
-	$(".main").append('<ul class="ul"></ul><iframe class="iframe" src="http://www.'+url+'" name="ifram_a"></iframe>');
+	$(".main").append('<div class="ul"></div> <iframe class="iframe" src="http://www.'+url+'" name="ifram_a"></iframe>');
 
 
-	$(".main .ul").append('<img class="img" src="images/logo small.png" alt="Missing" height="65" width="60">');
-	$(".main .ul").append('<button class="up button" type="button"></button>');
-	$(".main .ul").append('<button class="down button" type="button"></button>');
-	$(".main .ul").append('<button class="return button" type="button" onclick="callSearch();">Rerun</button>');
-	$(".main .ul").append('<li class="li">'+searchKeyword+'</li>');
+	$(".main .ul").append('<div class="img-div"><img class="img" src="images/logo small.png" alt="Missing"></div>');
+	$(".main .ul").append('<button class="back button" onclick="backPage();" type="button"></button>');
+	//$(".main .ul").append('<button class="refresh button" onclick="refreshPage();" type="button"></button>');
+	$(".main .ul").append('<button class="return button" type="button" onclick="callSearch();">Keep Dowsing</button>');
+	//$(".main .ul").append('<div class="li">'+searchKeyword+'</div>');
+	$(".main .ul").append('<div class="li2">www.'+url+'</div>');
 
 	
 	$(".main .ul .img").click(function(){
 		buildpage(0);
-	});
+	}); 
 		
 
+}
+
+function backPage(){
+	window.history.back();
+}
+
+function refreshPage(){
+	document.getElementById('.iframe').contentWindow.location.reload();
 }
 
 function callSearch(){
@@ -69,5 +88,5 @@ function callSearch(){
 		}else{
 			buildpage(1,finalURL);
 		}
-	},3000);
+	},5000);
 }

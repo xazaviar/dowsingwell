@@ -1,6 +1,7 @@
 
 	var dictionary = [];
-	var max_search = 100;
+	var max_search = 200;
+	var max_timer = 5000;
 
 	loadDictionary();
 	//pingURL("google.com");
@@ -50,12 +51,13 @@
 	var isValid = false;
 	var finalURL= "";
 	var attempt = 0;
+	var input= "";
 	function appendRandom(input){
-		console.log(input);
 		var url = "";
 		finalURL = "";
 		isValid = false;
 		attempt = 0;
+		this.input = input;
 		while(!isValid && attempt < max_search){
 			var rand1 = Math.random();
 			var rand2 = Math.random();
@@ -74,12 +76,12 @@
 				url = input + dictionary[rand3] + closure;
 			}
 			
-			makeRequest(url);
+			makeRequest(url);	
 			
 			attempt++;
 		}
 		
-		window.setTimeout(pushToDB,3100);
+		window.setTimeout(pushToDB,max_timer);
 		
 	}
 
@@ -105,12 +107,12 @@
 
 	function pushToDB(){
 			var req = new XMLHttpRequest();
-			req.open("GET","./php/insertDB.php?val="+finalURL,true);
+			req.open("GET","./php/insertDB.php?val="+finalURL+"&val2="+input+"&op="+0,true);
 			req.send();
 			req.onreadystatechange = 
 				function(){
 					if(this.readyState == 4 && this.status == 200){
-						console.log("LOGGED: "+finalURL);
+						console.log("LOGGED: "+finalURL+ " | SQL: "+ req.responseText);
 						//console.log("pushingtoDB");
 						//document.getElementById("tmp").innerHTML = req.responseText;
 					}

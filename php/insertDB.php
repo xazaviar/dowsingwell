@@ -7,18 +7,32 @@
 	$con = mysqli_connect($server,$username,$password,$dbname);
 	if (!$con) {
 	    die('Could not connect: ' . mysqli_error($con));
+		
 	}
 	mysqli_select_db($con,$dbname);
 	if( isset($_GET)){
-		callNewWebsite($_GET['val'],$con);
+		$op = $_GET['op'];
+		
+		switch($op){
+			case 0: callNewWebsite($_GET['val'],$_GET['val2'],$con);
+			case 1: callMostFrequent($con);
+		}
 	}
 	
-	function callNewWebsite($val,$con){
+	function callNewWebsite($val,$val2,$con){
 		
 		if($val != ""){
-			$sql = "Call new_website('".$val."');" ;
-			echo($sql);
+			echo($_GET['val2']);
+			$sql = "Call new_website('".$val."','".$val2."');" ;
 			mysqli_query($con,$sql);
+		}
+	}
+	
+	function callMostFrequent($con){
+		$sql = "call getMostFrequent();";
+		$result = mysqli_query($con,$sql);
+		while($row = mysqli_fetch_array($result)) {
+			echo($row['term']);
 		}
 	}
 	
