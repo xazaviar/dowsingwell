@@ -81,17 +81,35 @@ input[type='radio']{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;  
 }
 
-.ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
-    background-color: #333;
+.img-div {
+    float:left;
+    left: 10px;
 }
+
+.ul {
+    position: absolute;
+    width: 100.25%;
+    height: 63px;
+    left: -0.25%;
+    top: -1px;
+    background-color: #333
+}
+
+.iframe {
+     position: absolute;
+     border: none;
+     top: 9.7%;
+     left: -0.25%;
+     height: 90%;
+     width: 100.25%;
+     background-color: white;
+}
+
 
 .img{
     float: left;
+    height: 65px;
+    width: 60px;
 }
 
 .button {
@@ -105,23 +123,25 @@ input[type='radio']{
 .button.return{
     float: right;
     color: white;
-    padding: 15px 32px;
-    margin: 10px 5px;
-    font-size: 16px;
+    background-color: brown;
+    padding: 19px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
-.button.up{
-    background-image: url(../images/up_rod.png);
+.button.back{
+    background-image: url(../images/back.png);
     background-size: 48px 52px;
     background-repeat: no-repeat;
     height: 48px;
-    margin: 10px 30px;
+    margin: .5%;
     width: 52px;
-    float: center;
+    float: center; 
 }
 
-.button.down{
-    background-image: url(../images/down_rod.png);
+.button.refresh{
+    background-image: url(../images/refresh.png);
     background-size: 48px 52px;
     background-repeat: no-repeat;
     height: 48px;
@@ -134,23 +154,29 @@ input[type='radio']{
     float: right;
     display: block;
     color: white;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 20px;
     margin: 21px 5px;
     text-align: center;
     text-decoration: none;
 }
 
+.li2{
+    float: right;
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 20px;
+    margin: 21px 20px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+}
 
 .button:hover:not(.active) {
     background-color: #111;
-}
-
-.iframe {
-     position: absolute;
-     border: none;
-     height: 87%;
-     width: 98.5%;
-     background-color: white;
 }
 
 /*

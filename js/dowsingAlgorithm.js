@@ -1,6 +1,7 @@
 
 	var dictionary = [];
-	var max_search = 100;
+	var max_search = 200;
+	var max_timer = 5000;
 
 	loadDictionary();
 	//pingURL("google.com");
@@ -79,7 +80,7 @@
 			attempt++;
 		}
 		
-		window.setTimeout(pushToDB,3100);
+		window.setTimeout(pushToDB,max_timer);
 		
 	}
 
